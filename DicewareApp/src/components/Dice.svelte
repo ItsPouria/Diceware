@@ -1,12 +1,23 @@
+<script>
+  let diceNumber = 0;
+  function randomNumber() {
+        diceNumber = (Math.floor(Math.random() * 6) + 1);
+        return diceNumber;
+    }
+
+</script>
 <html lang="en">
-        <div class="dice">
-            <div class="side one"></div>
-            <div class="side two"></div>
-            <div class="side three"></div>
-            <div class="side four"></div>
-            <div class="side five"></div>
-            <div class="side six"></div>
-        </div>
+        <button class="dice" on:click={randomNumber} aria-label="Roll dice">
+          <div class="side one"></div>
+          <div class="side two"></div>
+          <div class="side three"></div>
+          <div class="side four"></div>
+          <div class="side five"></div>
+          <div class="side six"></div>
+        </button>
+
+      <p>{diceNumber}</p>
+
 </html>
 
 <style>
