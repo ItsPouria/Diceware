@@ -1,8 +1,18 @@
 <script>
+  let diceNumber = "";
+  function rollDice() {
+    diceNumber = "";
+    for (let i=0; i < 5; i++) {
+      let roll = Math.floor(Math.random() * 6) + 1;
+      diceNumber += roll.toString();
+    }
+    diceNumber = Number(diceNumber).toString();
+  };
+
 
 </script>
 
 <html lang="en">
-    <p>Hello to the dicey world!</p> 
+  <button on:click={rollDice}>roll the dice</button>
+  <p>{diceNumber}</p>
 </html>
-
