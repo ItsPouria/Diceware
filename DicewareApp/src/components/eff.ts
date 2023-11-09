@@ -1,6 +1,6 @@
 // source: https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases
 // license; UNLICENSED
-export var eff = {
+export var wordlist = {
   11111: "abacus",
   11112: "abdomen",
   11113: "abdominal",
